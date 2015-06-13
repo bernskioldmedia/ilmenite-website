@@ -1,0 +1,169 @@
+@import "settings";
+// @import "foundation";
+
+// Or selectively include components
+// @import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+@import "foundation/components/buttons";
+//   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+@import "foundation/components/grid";
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switches",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+@import "foundation/components/type";
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility";
+
+/**
+ * Header
+ */
+.site-header {
+	background: $primary-color;
+	color: #E3EAF5;
+	text-align: center;
+	padding: 8rem 0 8rem 0;
+
+	a:hover {
+		text-decoration: underline;
+		color: inherit;
+	}
+}
+
+	.site-title,
+	.site-subtitle,
+	.site-author,
+	.site-header a {
+		color: inherit;
+		font-family: 'Roboto Slab', serif;
+	}
+
+	.site-title {
+		font-size: 4.5rem;
+		margin-bottom: 1rem;
+	}
+
+	.site-subtitle {
+		font-size: 2.3rem;
+		margin-bottom: 1.4rem;
+	}
+
+	.site-author {
+		text-transform: uppercase;
+		font-size: 1.5rem;
+	}
+
+/**
+ * Site Footer
+ */
+.site-footer {
+	background: $secondary-color;
+	color: darken( $secondary-color, 40% );
+	text-align: center;
+	padding: 3rem 0 3rem 0;
+
+	p,
+	a {
+		color: inherit;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	p {
+		font-size: 1.2rem;
+		margin: 0 0 0.2rem 0;
+	}
+}
+
+	.footer-links {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			display: inline-block;
+			font-size: 1rem;
+
+			&:after {
+				content: ' |';
+			}
+
+			&:first-child:after,
+			&:last-child:after {
+				content: '';
+			}
+		}
+
+		.footer-links-title {
+			font-weight: bold;
+		}
+	}
+
+/**
+ * Collection
+ */
+.collection-item {
+	padding: 5rem 0 5rem 0;
+	border-bottom: 1px solid $secondary-color;
+}
+
+	.collection-item-title {
+		margin-bottom: 1rem;
+		text-align: center;
+	}
+
+	.collection-item-tags {
+		margin: 0 0 1rem 0;
+		padding: 0;
+		text-align: center;
+		list-style: none;
+
+		li {
+			background: $secondary-color;
+			display: inline-block;
+			padding: 0.4rem 0.8rem;
+			border-radius: $global-radius;
+			color: darken($secondary-color, 50%);
+			font-size: 0.8rem;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+	}
+
+	.collection-item-actions {
+		list-style: none;
+		margin: 3rem 0 0 0;
+		padding: 0;
+		text-align: center;
+
+		li {
+			display: inline-block;
+			margin: 0 0.1rem;
+		}
+	}
